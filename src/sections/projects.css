@@ -1,0 +1,120 @@
+#projectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: var(--rtc-padding-3xl);
+  background-color: var(--rtc-bgColorInverted);
+  height: 100svh;
+  gap: var(--rtc-gap-m);
+}
+
+#projectsSection h2, #projectsSection p {
+  color: var(--rtc-textColorInverted);
+}
+
+#textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-gap-m);
+  font-size: 2rem;
+  position: relative;
+}
+
+#cardsContainer h4, #cardsContainer p {
+  color: var(--rtc-textColorInverted);
+}
+
+#cardsContainer {
+  display: flex;
+  gap: var(--rtc-padding-3xl);
+  overflow-x: scroll;
+  font-size: 1.2rem;
+  
+  width: calc(100% + var(--rtc-padding-3xl) + var(--rtc-padding-3xl));
+  padding-right: var(--rtc-padding-3xl);
+  padding-left: var(--rtc-padding-3xl);
+  margin-left: calc(-1 * var(--rtc-padding-3xl));
+  
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 50px;
+}
+
+#cardsContainer::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+#cardsContainer::-webkit-scrollbar-track {
+  background: var(--rtc-bgColor2);
+  height: 6px;
+  
+}
+#cardsContainer::-webkit-scrollbar-thumb {
+  background-color: var(--rtc-bgColor);
+  border-radius: 10px;  
+  border: 1px solid var(--rtc-bgColor);
+}
+
+#cardsContainer::-webkit-scrollbar-thumb:hover {
+  background-color: var(--rtc-bgColor3);
+  cursor: pointer;
+}
+
+
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--rtc-padding-s);
+  gap: var(--rtc-padding-s);
+  background-color: var(--rtc-bgColor4);
+  border-radius: var(--rtc-card-border-radius);
+  scroll-snap-align: center;
+  box-shadow: 5px 5px 1px 1px var(--rtc-color-6),
+  10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projectCard:hover {
+  background-color: var(--rtc-color-5);
+  box-shadow: 5px 5px 1px 1px var(--rtc-color-4),
+  10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projectCard img{
+  width: 400px;
+  height: 189px;
+  border-radius: 20px;
+  border:  8px solid var(--rtc-color-1);
+}
+
+.projectDescription {
+  font-size: 1rem;
+}
+
+.projectButton {
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: var(--rtc-bgColor);
+  border-radius: var(--rtc-card-border-radius);
+}
+
+.projectButton:hover {
+  background-color: var(--rtc-bgColor2);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  #projectsSection {
+  padding: var(--rtc-padding-xl) var(--rtc-padding-m);
+  }
+
+  #textContainer {
+  gap: var(--rtc-gap-m);
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+}

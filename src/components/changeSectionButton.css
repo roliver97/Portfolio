@@ -1,0 +1,29 @@
+section {
+  position: relative; /* necessari perquè els botons es posicionin dins */
+}
+
+.upSection, .downSection {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.upSection { top: 20px; }
+.downSection { bottom: 20px; }
+
+.upSection img, .downSection img {
+  max-width: 15px;
+  max-height: 15px; 
+  fill: red;
+  stroke: red;
+}

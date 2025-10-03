@@ -1,0 +1,79 @@
+/* CONFIGURACIONES GENERALES*/
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "src/components/variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--rtc-textColor);
+}
+
+body {
+  background-color: rgb(61, 57, 52);
+}
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 15px;
+  font-size: 1.5rem;
+  background-color: var(--rtc-color-3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  justify-content: center;
+  align-items: center; 
+}
+
+#backToTop:hover {
+  background-color: var(--rtc-color-4);
+}
+
+#backToTopIcon {
+  width: 25px;
+}
