@@ -35,8 +35,6 @@
   padding-left: var(--rtc-padding-3xl);
   margin-left: calc(-1 * var(--rtc-padding-3xl));
   
-
-  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   padding-bottom: 50px;
@@ -113,8 +111,20 @@
 
   #textContainer {
   gap: var(--rtc-gap-m);
-  font-size: 1.5rem;
+  font-size: 1rem;
   align-items: center;
+}
+
+.projectCard {
+  padding: var(--rtc-padding-xs);
+  gap: var(--rtc-padding-xs);
+}
+
+.projectCard img{
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  border:  8px solid var(--rtc-color-1);
 }
 
 }

@@ -79,6 +79,10 @@
   gap: 0;
   }
 
+  #hero .textDiv {
+  gap: var(--rtc-gap-xs);
+}
+
   #hero h1 {
   font-size: 3rem;
   }

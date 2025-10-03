@@ -183,4 +183,21 @@
     flex: 0 0 100%;
   }
 
+  #formSubmitButton {
+  gap: var(--rtc-gap-s);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+}
+
+@media (max-width: 500px) { 
+    .contactForm input, .contactForm textarea {
+    font-size: 0.5rem;
+    padding: var(--rtc-padding-xs);
+   }
+
+   .contactLinksList {
+    gap: var(--rtc-gap-m);
+   }
 }
