@@ -7,7 +7,7 @@ export function showBackToTop() {
   const backToTopIcon = document.createElement("img");
   backToTopBtn.id = "backToTop";
   backToTopIcon.id = "backToTopIcon";
-  backToTopIcon.src = "/icons/backtotop.png";
+  backToTopIcon.src = import.meta.env.BASE_URL + "icons/backtotop.png";
   backToTopBtn.appendChild(backToTopIcon);
   document.body.appendChild(backToTopBtn);
   

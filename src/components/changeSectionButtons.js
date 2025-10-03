@@ -16,7 +16,7 @@ export function showChangeSection() {
       upBtn.classList.add("upSection");
 
       const upIcon = document.createElement("img");
-      upIcon.src = isWhite ? "/icons/arrow-up-blue.svg" : "/icons/arrow-up-white.svg";
+      upIcon.src = isWhite ?  import.meta.env.BASE_URL + "icons/arrow-up-blue.svg" :  import.meta.env.BASE_URL + "icons/arrow-up-white.svg";
       upBtn.appendChild(upIcon);
 
       upBtn.addEventListener("click", () => {
@@ -32,7 +32,7 @@ export function showChangeSection() {
       downBtn.classList.add("downSection");
 
       const downIcon = document.createElement("img");
-      downIcon.src = isWhite ? "/icons/arrow-down-blue.svg" : "/icons/arrow-down-white.svg";
+      downIcon.src = isWhite ? import.meta.env.BASE_URL + "icons/arrow-down-blue.svg" : import.meta.env.BASE_URL + "icons/arrow-down-white.svg";
       downBtn.appendChild(downIcon);
 
       downBtn.addEventListener("click", () => {

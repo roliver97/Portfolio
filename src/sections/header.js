@@ -79,7 +79,7 @@ const templateHeader = () => {
   const hamburgerButton = document.createElement("button");
   const hamburgerIcon = document.createElement("img");
   hamburgerButton.id = "hamburgerButton";
-  hamburgerIcon.src = "public/icons/hamburger.svg";
+  hamburgerIcon.src = import.meta.env.BASE_URL + "icons/hamburger.svg";
   header.appendChild(hamburgerButton);
   hamburgerButton.appendChild(hamburgerIcon);
 }

@@ -57,7 +57,7 @@ const templateContact = () => {
   const submitButton = document.querySelector("#formSubmitButton");
   const submitIcon = document.createElement("img");
   submitIcon.id = "formSubmitIcon"
-  submitIcon.src = "public/icons/paper_plane.png";
+  submitIcon.src = import.meta.env.BASE_URL + "icons/paper_plane.png";
   submitButton.prepend(submitIcon);
 
   // Añadimos un input hidden al form para guardar la opción (botón) seleccionado por el usuario
@@ -95,8 +95,8 @@ const templateContact = () => {
 
   // Array de links
   const links = [
-    { name: "LinkedIn", icon: "public/icons/linkedin_link.png", url: "https://www.linkedin.com/in/rom%C3%A0-oliver-370707179/" },
-    { name: "GitHub", icon: "public/icons/github_link.png", url: "https://github.com/roliver97" }
+    { name: "LinkedIn", icon: import.meta.env.BASE_URL + "icons/linkedin_link.png", url: "https://www.linkedin.com/in/rom%C3%A0-oliver-370707179/" },
+    { name: "GitHub", icon:  import.meta.env.BASE_URL + "icons/github_link.png", url: "https://github.com/roliver97" }
   ];
 
   links.forEach(link => {

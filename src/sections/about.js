@@ -40,10 +40,10 @@ const templateAbout = () => {
 
   // Array de skills
   const skills = [
-    { name: "HTML", img: "public/icons/html.svg" },
-    { name: "CSS", img: "public/icons/css.svg" },
-    { name: "JavaScript", img: "public/icons/js.svg" },
-    { name: "GitHub", img: "public/icons/github.svg" }
+    { name: "HTML", img: import.meta.env.BASE_URL + "icons/html.svg" },
+    { name: "CSS", img: import.meta.env.BASE_URL + "icons/css.svg" },
+    { name: "JavaScript", img: import.meta.env.BASE_URL + "icons/js.svg" },
+    { name: "GitHub", img: import.meta.env.BASE_URL + "icons/github.svg" }
   ];
 
   skills.forEach(skill => {

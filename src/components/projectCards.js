@@ -6,10 +6,10 @@ export const printProjectCards = () => {
 }
 
 const projects = [
-  { title: "Landing Page", description: "Responsive landing page built with HTML & CSS, showcasing a product or service", image: "/images/projects/landing_page.png", url: "https://roliver97.github.io/Proyecto1/" },
-  { title: "Filter Store", description: "Interactive e-commerce site with product filtering functionality using JavaScript", image: "/images/projects/filter_shop.png", url: "https://roliver97.github.io/Proyecto2-TiendaDeFiltros/"},
-  { title: "Pinterest Async", description: "Pinterest-style gallery fetching images asynchronously from an API with vanilla JS", image: "/images/projects/async_pinterest.png"}, 
-  {title: "Portfolio", description: "Personal portfolio website demonstrating projects, skills, and contact options", image: "/images/projects/portfolio.png", url: scrollToTop}
+  { title: "Landing Page", description: "Responsive landing page built with HTML & CSS, showcasing a product or service", image: import.meta.env.BASE_URL + "images/projects/landing_page.png", url: "https://roliver97.github.io/Proyecto1/" },
+  { title: "Filter Store", description: "Interactive e-commerce site with product filtering functionality using JavaScript", image: import.meta.env.BASE_URL + "images/projects/filter_shop.png", url: "https://roliver97.github.io/Proyecto2-TiendaDeFiltros/"},
+  { title: "Pinterest Async", description: "Pinterest-style gallery fetching images asynchronously from an API with vanilla JS", image: import.meta.env.BASE_URL + "images/projects/async_pinterest.png"}, 
+  {title: "Portfolio", description: "Personal portfolio website demonstrating projects, skills, and contact options", image: import.meta.env.BASE_URL + "images/projects/portfolio.png", url: scrollToTop}
 ];
 
 const projectCardsTemplate = () => {

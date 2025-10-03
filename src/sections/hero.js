@@ -24,7 +24,7 @@ const templateHero = () => {
   h3.textContent="I build thing for web";
   h4.textContent="Hello✋";
   image.className = "profilePic";
-  image.src="public/images/fotoprueba.png";
+  image.src= import.meta.env.BASE_URL + "images/fotoprueba.png";
 
   hero.appendChild(textDiv);
   textDiv.appendChild(h4);
