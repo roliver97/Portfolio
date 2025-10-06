@@ -8,6 +8,7 @@ export const printProjects = () => {
 const templateProjects = () => {
   const projectsSection = document.createElement("section");
   projectsSection.id = "projectsSection";
+  projectsSection.classList.add('whiteSection');
   document.body.appendChild(projectsSection);
 
   /*CONTENIDO DE CADA SECCIÓN*/

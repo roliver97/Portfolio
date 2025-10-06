@@ -7,9 +7,7 @@ export function showChangeSection() {
   sections.forEach((sec, i) => { 
   // Recordatorio: forEach pasa automáticamente el elemento actual (sec) y su índice (i) en cada iteración, por eso no hace falta pasarlos como argumentos.
 
-    const bgColor = window.getComputedStyle(sec).backgroundColor;
-    const normalizeRgb = (color) => color.replace(/\s+/g, '');
-    const isWhite = normalizeRgb(bgColor) === 'rgb(255,255,255)' || normalizeRgb(bgColor) === 'rgba(255,255,255,1)';
+    const isWhite = sec.classList.contains('whiteSection');
 
     // --- UP BUTTON ---
     if (i > 0) {
@@ -17,7 +15,7 @@ export function showChangeSection() {
       upBtn.classList.add("upSection");
 
       const upIcon = document.createElement("img");
-      upIcon.src = isWhite ?  import.meta.env.BASE_URL + "icons/arrow-up-blue.svg" :  import.meta.env.BASE_URL + "icons/arrow-up-white.svg";
+      upIcon.src = isWhite ? import.meta.env.BASE_URL + "icons/arrow-up-blue.svg" : import.meta.env.BASE_URL + "icons/arrow-up-white.svg";
       upBtn.appendChild(upIcon);
 
       upBtn.addEventListener("click", () => {

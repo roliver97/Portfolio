@@ -7,6 +7,7 @@ export const printAbout = () => {
 const templateAbout = () => {
   const aboutSection = document.createElement("section");
   aboutSection.id = "about";
+  aboutSection.classList.add('whiteSection');
   document.body.appendChild(aboutSection);
   
 
