@@ -27,3 +27,18 @@ section {
   fill: red;
   stroke: red;
 }
+
+/* --- MEDIA QUERY --- */
+@media (max-width: 800px) {
+    .upSection, .downSection {
+        width: 30px; 
+        height: 30px;
+    }
+    
+    .upSection { 
+        top: 15px;
+    }
+    .downSection { 
+        bottom: 15px;
+    }
+}

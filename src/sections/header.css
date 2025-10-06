@@ -58,6 +58,14 @@ transition: color 0.3s;
 }
 
 @media (max-width: 1000px) {
+  header a {
+    font-size: 1.2rem;
+  }
+
+  .contactLink {
+    font-size: 1rem;
+  }
+
   .nav, .contactLink {
     display: none;
   }

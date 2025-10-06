@@ -108,11 +108,10 @@
 
   #experienceHeader {
   gap: var(--rtc-gap-s);
-  
 }
 
   .experienceButton {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   }
   #experienceContainer  {
   font-size: 1rem;

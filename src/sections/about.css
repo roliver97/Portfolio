@@ -78,12 +78,12 @@
 
   #about h2{
   color: var(--rtc-textColorInverted);
-  font-size: 2rem;
+  font-size: 1.8rem;
   }
 
   #about p{
   color: var(--rtc-textColorInverted);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   }
 
   .skillsList img {
