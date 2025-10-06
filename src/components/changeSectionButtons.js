@@ -8,7 +8,8 @@ export function showChangeSection() {
   // Recordatorio: forEach pasa automáticamente el elemento actual (sec) y su índice (i) en cada iteración, por eso no hace falta pasarlos como argumentos.
 
     const bgColor = window.getComputedStyle(sec).backgroundColor;
-    const isWhite = bgColor === "rgb(255, 255, 255)" || bgColor === "white" || bgColor === "rgba(255, 255, 255, 1)";
+    const normalizeRgb = (color) => color.replace(/\s+/g, '');
+    const isWhite = normalizeRgb(bgColor) === 'rgb(255,255,255)' || normalizeRgb(bgColor) === 'rgba(255,255,255,1)';
 
     // --- UP BUTTON ---
     if (i > 0) {

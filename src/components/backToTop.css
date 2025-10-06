@@ -1,0 +1,34 @@
+
+#backToTop {
+  position: fixed;
+  bottom: 3svh;
+  right: 3svw;
+  padding: 15px 15px;
+  font-size: 1.5rem;
+  background-color: var(--rtc-color-3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  justify-content: center;
+  align-items: center; 
+}
+
+#backToTop:hover {
+  background-color: var(--rtc-color-4);
+}
+
+#backToTopIcon {
+  width: 25px;
+}
+
+@media (max-width: 600px) {
+  #backToTop {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}

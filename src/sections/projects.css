@@ -44,15 +44,17 @@
   height: 10px;
   width: 10px;
 }
+
 #cardsContainer::-webkit-scrollbar-track {
   background: var(--rtc-bgColor2);
   height: 6px;
-  
 }
+
 #cardsContainer::-webkit-scrollbar-thumb {
   background-color: var(--rtc-bgColor);
-  border-radius: 10px;  
-  border: 1px solid var(--rtc-bgColor);
+  border-radius: 10px;
+  border: 3px solid transparent; /* simula marge */
+  background-clip: content-box;  /* perquè el color no pinti sobre el border */
 }
 
 #cardsContainer::-webkit-scrollbar-thumb:hover {
@@ -106,7 +108,7 @@
 
 @media (max-width: 1000px) {
   #projectsSection {
-  padding: var(--rtc-padding-xl) var(--rtc-padding-m);
+  padding: var(--rtc-padding-xl) 0;
   }
 
   #textContainer {
@@ -118,6 +120,11 @@
 .projectCard {
   padding: var(--rtc-padding-xs);
   gap: var(--rtc-padding-xs);
+  font-size: 1rem;
+}
+
+.projectDescription {
+  font-size: 0.9rem;
 }
 
 .projectCard img{
@@ -127,4 +134,13 @@
   border:  8px solid var(--rtc-color-1);
 }
 
+  #cardsContainer {
+    width: 100%;
+    margin-left: 0;
+    gap: var(--rtc-padding-xl);
+    padding-left: var(--rtc-padding-xl);
+    padding-right: var(--rtc-padding-xl);
+    margin-left: 0;
+   scroll-snap-type: x mandatory;
+  }
 }
