@@ -21,7 +21,7 @@ const templateHero = () => {
   h1.textContent="I'm a web ";
   span.textContent="Developer";
   span.className = "titleHighlight";
-  h3.textContent="I build thing for web";
+  h3.textContent="I build things for the web";
   h4.textContent="Hello✋";
   image.className = "profilePic";
   image.src= import.meta.env.BASE_URL + "images/fotoprueba.png";
