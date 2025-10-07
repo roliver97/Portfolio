@@ -1,5 +1,6 @@
 
 #backToTop {
+  display: none;
   position: fixed;
   bottom: 3svh;
   right: 3svw;

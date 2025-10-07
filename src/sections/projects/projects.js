@@ -1,5 +1,5 @@
 import './projects.css';
-import { printProjectCards } from '../components/projectCards.js';
+import { printProjectCards } from './projects_subcomponents/projectCards/projectCards';
 
 export const printProjects = () => {
   templateProjects();

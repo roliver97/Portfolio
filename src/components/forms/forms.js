@@ -45,9 +45,14 @@ export const createForm = (fields, className = "genericForm", submitText = "Subm
   });
 
   const button = document.createElement("button");
+  const submitIcon = document.createElement("img");
+  
   button.type = "submit";
   button.textContent = submitText;
   button.id = "formSubmitButton";
+  submitIcon.id = "formSubmitIcon"
+  submitIcon.src = import.meta.env.BASE_URL + "icons/paper_plane.png";
+  button.prepend(submitIcon);
   form.appendChild(button);
 
   return form;

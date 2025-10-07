@@ -1,8 +1,6 @@
 /* CONFIGURACIONES GENERALES*/
 @import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "src/components/variables.css";
-
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +34,60 @@ body {
   background-color: rgb(61, 57, 52);
 }
 
+:root {
+  /* BRANDING COLORS */
+  --rtc-color-1: #ffffff;
+  --rtc-color-2: #16697a;
+  --rtc-color-3: #489fb5;
+  --rtc-color-4: #95cdd8;
+  --rtc-color-5: #cce7ed;
+  --rtc-color-6: #e9e9e9a6;
 
+  /* TEXT COLORS */
+  --rtc-textColor: var(--rtc-color-1);
+  --rtc-textColorInverted: var(--rtc-color-2);
+  --rtc-textColorHighlight: var(--rtc-color-4);
+
+  /* BACKGROUND COLORS */
+  --rtc-bgColor: var(--rtc-color-2);
+  --rtc-bgColorInverted: var(--rtc-color-1);
+  --rtc-bgColor2: var(--rtc-color-3);
+  --rtc-bgColor3: var(--rtc-color-4);
+  --rtc-bgColor4: var(--rtc-color-6);
+  --rtc-bgColorHighlight: var(--rtc-color-5);
+  
+
+  /* HIGHLIGHT COLORS */
+  --rtc-highlightColor: var(--rtc-color-6);
+
+  /* BORDER RADIUS */
+  --rtc-card-border-radius: 30px;
+
+  /* SPACINGS */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-xxl: 75px;
+  --rtc-margin-3xl: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+  --rtc-padding-xxl: 75px;
+  --rtc-padding-3xl: 100px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+  --rtc-gap-xxl: 75px;
+  --rtc-gap-3xl: 100px;
+}
 
 .flex-container {
   display: flex;

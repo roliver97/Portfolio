@@ -1,5 +1,6 @@
 import './experience.css';
-import { createButton } from '../components/buttons.js';
+import { createButton } from '../../components/buttons/buttons.js';
+import { templateExperienceList } from './experience_subcomponents/templateExperienceList/templateExperienceList.js';
 
 export const printExperience = () => {
   templateExperience();
@@ -21,7 +22,6 @@ const templateExperience = () => {
   experienceSection.appendChild(experienceHeader);
   experienceSection.appendChild(experienceContainer);
  
-
   /*CONTENIDO DE CADA SECCIÓN*/
   /* Experience Header */
   const experienceButton = createButton("Experience", "experienceButton");
@@ -38,57 +38,37 @@ const templateExperience = () => {
   experienceDiv.id = "experienceDiv";
   experienceContainer.appendChild(experienceDiv);
 
-  const experienceList = document.createElement("ul");
-
     // Array de experiences
     const experiences = [
   { title: "BLAY TAMARIT, SL / RAMADERA MONTPEDRÓS, SLU", description: "Operations & Administration", placeAndPeriod: "2022 - 2025 | Gualta, Girona"
   },
       { title: "LOUIS VUITTON S.A. – Manufacture de Maroquinerie et Accessoires", description: "Leather Goods Specialist", placeAndPeriod: "2019 - 2022 | Barberà del Vallès, Barcelona" },
     ];
+  
+  const experienceList = document.createElement("ul");
 
-    experiences.forEach(experience => {
-    const li = document.createElement("li");
-    const h4 = document.createElement("h4");
-    const description = document.createElement("p");
-    const placeAndPeriod = document.createElement("p");
-    h4.textContent = experience.title;
-    description.textContent = experience.description;
-    placeAndPeriod.textContent = experience.placeAndPeriod;
-    placeAndPeriod.className = "jobsPlaceAndPeriod"
-    li.appendChild(h4);
-    li.appendChild(description);
-    li.appendChild(placeAndPeriod);
+  experiences.forEach(exp => {
+    const li = templateExperienceList(exp, "jobsPlaceAndPeriod");
     experienceList.appendChild(li);
-    });
+  });
 
-    experienceDiv.appendChild(experienceList);
+  experienceDiv.appendChild(experienceList);
 
   /* Studies Div */
   const studiesDiv = document.createElement("div");
   studiesDiv.id = "studiesDiv";
   experienceContainer.appendChild(studiesDiv);
 
-  const studiesList = document.createElement("ul");
-
     // Array de studies
     const studies = [
-      { title: "UNIVERSITAT DE VIC (Crash Escuela Audiovisual)", degree: "Diploma in Sound Engineering and Music Production", placeAndPeriod: "2016 - 2017 | Manresa, Barcelona" },
-      { title: "INSTITUT D'AURO", degree: "High School Diploma, Social & Humanities Track", placeAndPeriod: "2013 - 2015 | Santpedor, Barcelona" },
+      { title: "UNIVERSITAT DE VIC (Crash Escuela Audiovisual)", description: "Diploma in Sound Engineering and Music Production", placeAndPeriod: "2016 - 2017 | Manresa, Barcelona" },
+      { title: "INSTITUT D'AURO", description: "High School Diploma, Social & Humanities Track", placeAndPeriod: "2013 - 2015 | Santpedor, Barcelona" },
     ];
 
+    const studiesList = document.createElement("ul");
+
     studies.forEach(study => {
-    const li = document.createElement("li");
-    const h4 = document.createElement("h4");
-    const degree = document.createElement("p");
-    const placeAndPeriod = document.createElement("p");
-    h4.textContent = study.title;
-    degree.textContent = study.degree;
-    placeAndPeriod.textContent = study.placeAndPeriod;
-    placeAndPeriod.className = "studiesPlaceAndPeriod"
-    li.appendChild(h4);
-    li.appendChild(degree);
-    li.appendChild(placeAndPeriod)
+    const li = templateExperienceList(study, "studiesPlaceAndPeriod");
     studiesList.appendChild(li);
     });
 

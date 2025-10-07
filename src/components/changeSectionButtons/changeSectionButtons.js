@@ -1,4 +1,4 @@
-import './changeSectionButton.css'
+import './changeSectionButtons.css'
 
 // CHANGE SECTION BUTTONS
 export function showChangeSection() {

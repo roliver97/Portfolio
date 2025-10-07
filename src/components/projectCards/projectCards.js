@@ -1,5 +1,5 @@
-import { createButton } from "./buttons";
-import { scrollToTop } from "../components/backToTop.js";
+import { createButton } from "../../../../components/buttons/buttons.js";
+import { scrollToTop } from "../../../../components/backToTop/backToTop.js";
 
 export const printProjectCards = () => {
   projectCardsTemplate();
@@ -49,6 +49,7 @@ const projectCardsTemplate = () => {
       else if(project.url) {
         const link = document.createElement("a");
         link.href = project.url;
+        link.target = "_blank";
         link.appendChild(button);
         card.appendChild(link);
       } 
