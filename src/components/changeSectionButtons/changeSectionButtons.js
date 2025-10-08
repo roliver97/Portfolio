@@ -1,4 +1,6 @@
 import './changeSectionButtons.css'
+import arrowUpBlue from '/icons/arrow-up-blue.svg'
+import arrowUpWhite from '/icons/arrow-up-white.svg'
 
 // CHANGE SECTION BUTTONS
 export function showChangeSection() {
@@ -15,7 +17,7 @@ export function showChangeSection() {
       upBtn.classList.add("upSection");
 
       const upIcon = document.createElement("img");
-      upIcon.src = isWhite ? import.meta.env.BASE_URL + "icons/arrow-up-blue.svg" : import.meta.env.BASE_URL + "icons/arrow-up-white.svg";
+      upIcon.src = isWhite ? arrowUpBlue : arrowUpWhite;
       upBtn.appendChild(upIcon);
 
       upBtn.addEventListener("click", () => {
